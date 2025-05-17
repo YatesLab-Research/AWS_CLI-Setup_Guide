@@ -112,6 +112,7 @@ aws s3 sync /mnt/e/Maryland_RNA-seq/Transit/ s3://rit-yates-lab-sa1/Maryland_RNA
 ```bash
 tail -f upload.log
 ```
+#### The 'aws s3 sync' command is a powerful and efficient way to upload files to S3, as it only transfers new or modified files, making it ideal for large datasets and safe to re-run without duplicating data.
 
 ---
 
@@ -123,7 +124,7 @@ If you see this error:
 An error occurred (ExpiredToken): The security token included in the request is expired
 ```
 
-Repeat **Step 2 (6–10)** and then re-run your upload (**Step 3**).
+Repeat **Step 2 (6–10)** and then re-run your upload (**Step 3**). 
 
 ---
 
