@@ -133,8 +133,9 @@ Repeat **Step 2 (6–10)** and then re-run your upload (**Step 3**).
 - Phone: 571-234-7722
 
 ☕ While the data is migrating, drink a glass of water or a shot of coffee! 
-  Remember to load your data in batches- tends to upload faster
-  I will update this document this document regularly as I discover more tricks.
+  
+  ### Remember to load your data in batches- tends to upload faster.
+  ### I will update this document regularly as I discover more tricks.
 
 ---
 
