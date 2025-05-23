@@ -102,8 +102,37 @@ aws s3 sync /path/to/local/file/or/folder/ s3://bucket-name/folder/ --profile ya
 ### ✅ Example:
 
 ```bash
-aws s3 sync /mnt/e/Maryland_RNA-seq/Transit/ s3://rit-yates-lab-sa1/Maryland_RNA-seq/ --profile yateslab --exact-timestamps > upload.log 2>&1
+aws s3 sync /mnt/e/RNA-seq/ s3://rit-yates-lab-sa1/RNA-seq/ --profile yateslab --exact-timestamps > upload.log 2>&1
 ```
+
+## Alternatively
+Use `aws_cli_S3_upload.sh`
+
+This script uploads files from a local directory to an AWS S3 bucket using `aws s3 sync`, with exact timestamp handling and SHA256 checksum validation.
+
+## Configuration
+
+Edit the following variables in the script:
+
+- `SOURCE_DIR`: Absolute path to the directory you want to upload
+- `DEST_S3`: Full S3 URI where the files should go
+- `PROFILE`: AWS CLI profile with write access to the S3 bucket
+
+## Usage
+
+1. Make the script executable:
+   ```bash
+   chmod +x aws_cli_S3_upload.sh
+   ```
+
+2. Run the script:
+   ```bash
+   chmod +x aws_cli_S3_upload.sh
+   ```
+## Requirements
+-AWS CLI v2.7.0 or later (for  `--checksum-algorithm `)
+
+-Bash shell environment
 
 ---
 
